@@ -1,0 +1,112 @@
+
+timminbo@TIMMINBO-E734 MINGW32 ~
+$ cd
+
+timminbo@TIMMINBO-E734 MINGW32 ~
+$ cd /c
+
+timminbo@TIMMINBO-E734 MINGW32 /c
+$ ls
+'$Recycle.Bin'/                      pagefile.sys
+ 1ff334283ac12f42d6021a8587cbd994/   PerfLogs/
+ 260311bdb1963c84d537e801f382e8/     PGPWDE00
+ BOOTNXT                             PGPWDE01
+ Deploymentshares/                   PGPWDE02
+'Documents and Settings'@           'Program Files'/
+ Fujitsu/                           'Program Files (x86)'/
+ git/                                ProgramData/
+ HashiCorp/                          Recovery/
+ hello.txt                           S.LOG
+ hiberfil.sys                        snowsetup.log
+ Intel/                              swapfile.sys
+ MegeCli/                           'System Volume Information'/
+ msba/                               Temp/
+ MSOCache/                           Users/
+ opscode/                            Windows/
+
+timminbo@TIMMINBO-E734 MINGW32 /c
+$ cd git
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ git config --global user.name "bobtimmins247"
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ git config --global user.email bobtimmins247@gmail.com
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ git config --global user.name "bobtimmins"
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ git clone https://github.com/bobtimmins/Bucket
+Cloning into 'Bucket'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+Unpacking objects: 100% (3/3), done.
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ ls
+Bucket/
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git
+$ cd bucket
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git add test.txt
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git commit -m "first commit" test.txt
+[master 13120e7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bobtimmins/Bucket
+   5fb7f17..13120e7  master -> master
+Branch master set up to track remote branch master from origin.
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git commit -m "second commit" test.txt
+[master 3bb6a1c] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bobtimmins/Bucket
+   13120e7..3bb6a1c  master -> master
+Branch master set up to track remote branch master from origin.
+
+timminbo@TIMMINBO-E734 MINGW32 /c/git/bucket (master)
+$
